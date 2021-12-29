@@ -1,5 +1,6 @@
 package Stepdefinations;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,5 +34,6 @@ public class Login {
 	public void home_page_should_be_visible() {
 	    String Expectedtitle = "OrangeHRM";
 	    String Actualtitle = driver.getTitle();
+	    Assert.assertEquals(Expectedtitle, Actualtitle);
 	}
 }
