@@ -5,3 +5,4 @@ Scenario: Chicking login is successfull with valid credentials
 	When entering the "Admin" and "admin123"
 	And clicked the login button
 	Then home page should be visible
+	
